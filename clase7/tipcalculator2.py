@@ -5,7 +5,7 @@ def TipCalculator():
     personas = int(input("Cuantas personas pagaran?"))
     pago = total_cuenta/personas
     propina = int(input("Cuanto dejaran de propina?"))
-    pago_propina = round(pago*(1+(propina/100)))
-    print(f"Debes pagar: ${pago_propina}")
+    pago_propina = pago*(1+(propina/100))
+    print(f"Debes pagar: ${round(pago_propina, 2)}")
 
 TipCalculator()
